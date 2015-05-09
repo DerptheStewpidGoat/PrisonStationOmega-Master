@@ -90,6 +90,7 @@
 	ammo_type = /obj/item/ammo_casing/a40mm
 	max_ammo = 6
 
+
 ///////////EXTERNAL MAGAZINES////////////////
 
 /obj/item/ammo_box/magazine/m10mm
@@ -100,13 +101,6 @@
 	caliber = "10mm"
 	max_ammo = 8
 	multiple_sprites = 2
-
-/obj/item/ammo_box/magazine/m16
-	name = "M16A2 Magazine"
-	icon_state = "m16"
-	ammo_type = /obj/item/ammo_casing/a556
-	caliber = "5.56x45mm"
-	max_ammo = 30
 
 /obj/item/ammo_box/magazine/m45
 	name = "handgun magazine (.45)"
@@ -119,13 +113,6 @@
 	..()
 	icon_state = "[initial(icon_state)]-[ammo_count() ? "8" : "0"]"
 
-/obj/item/ammo_box/magazine/g17
-	name = "G17 magazine (9mm)"
-	icon_state = "g17"
-	ammo_type = /obj/item/ammo_casing/c9mm
-	caliber = "9mm"
-	max_ammo = 16
-
 /obj/item/ammo_box/magazine/smgm9mm
 	name = "SMG magazine (9mm)"
 	icon_state = "smg9mm"
@@ -133,8 +120,26 @@
 	caliber = "9mm"
 	max_ammo = 20
 
+/obj/item/ammo_box/magazine/g17
+	name = "G17 magazine (9mm)"
+	icon_state = "g17"
+	ammo_type = /obj/item/ammo_casing/c9mm
+	caliber = "9mm"
+	max_ammo = 17
 
 /obj/item/ammo_box/magazine/smgm9mm/update_icon()
+	..()
+	icon_state = "[initial(icon_state)]-[round(ammo_count(),5)]"
+
+/obj/item/ammo_box/magazine/ak922
+	name = "AK-922 magazine (7.62x39)"
+	icon_state = "akmag"
+	origin_tech = "combat=3"
+	ammo_type = /obj/item/ammo_casing/a762x39
+	caliber = "7.62x39"
+	max_ammo = 30
+
+/obj/item/ammo_box/magazine/ak922/update_icon()
 	..()
 	icon_state = "[initial(icon_state)]-[round(ammo_count(),5)]"
 
@@ -193,6 +198,19 @@ obj/item/ammo_box/magazine/tommygunm45
 	ammo_type = /obj/item/ammo_casing/a762
 	caliber = "a762"
 	max_ammo = 50
+
+/obj/item/ammo_box/magazine/m762/update_icon()
+	..()
+	icon_state = "[initial(icon_state)]-[round(ammo_count(),10)]"
+
+
+/obj/item/ammo_box/magazine/mbox12g
+	name = "box magazine (12 gauge)"
+	icon_state = "box12g"
+	origin_tech = "combat=3"
+	ammo_type = /obj/item/ammo_casing/shotgun/buckshot
+	caliber = "shotgun"
+	max_ammo = 40
 
 /obj/item/ammo_box/magazine/m762/update_icon()
 	..()

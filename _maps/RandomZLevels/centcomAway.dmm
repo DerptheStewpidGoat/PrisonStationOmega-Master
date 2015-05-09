@@ -512,7 +512,7 @@
 "jR" = (/obj/structure/closet/secure_closet/personal,/turf/simulated/floor/plasteel{tag = "icon-vault (NORTH)"; icon_state = "vault"; dir = 1},/area/awaymission/centcomAway/hangar)
 "jS" = (/obj/structure/window/reinforced{dir = 1},/turf/simulated/floor/plasteel{tag = "icon-vault (NORTHEAST)"; icon_state = "vault"; dir = 5},/area/awaymission/centcomAway/general)
 "jT" = (/obj/effect/decal/cleanable/cobweb2,/turf/simulated/floor/plasteel{icon_state = "grimy"},/area/awaymission/centcomAway/general)
-"jU" = (/obj/structure/safe/floor,/obj/item/clothing/under/rank/centcom_officer,/obj/item/weapon/gun/projectile/revolver/mateba,/turf/simulated/floor/plasteel{icon_state = "grimy"},/area/awaymission/centcomAway/general)
+"jU" = (/obj/structure/safe/floor,/obj/item/clothing/under/rank/centcom_officer,/obj/item/clothing/suit/det_suit,/obj/item/weapon/gun/projectile/revolver/mateba,/turf/simulated/floor/plasteel{icon_state = "grimy"},/area/awaymission/centcomAway/general)
 "jV" = (/obj/structure/table/reinforced,/obj/item/weapon/paper_bin,/turf/simulated/floor/plasteel{icon_state = "dark"},/area/awaymission/centcomAway/general)
 "jW" = (/obj/machinery/computer/secure_data,/turf/simulated/floor/plasteel{icon_state = "dark"},/area/awaymission/centcomAway/general)
 "jX" = (/obj/machinery/computer/card,/turf/simulated/floor/plasteel{icon_state = "dark"},/area/awaymission/centcomAway/general)

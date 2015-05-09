@@ -136,14 +136,14 @@
 	caliber = "a762"
 	projectile_type = /obj/item/projectile/bullet
 
-/obj/item/ammo_casing/a556
-	desc = "A 5.56x45 bullet casing."
-	caliber = "a556"
-	projectile_type = /obj/item/projectile/bullet/heavybullet
-
 /obj/item/ammo_casing/a545
 	desc = "A 5.45mm bullet casing."
 	caliber = "a545"
+	projectile_type = /obj/item/projectile/bullet/heavybullet
+
+/obj/item/ammo_casing/a762x39
+	desc = "A 7.62x39mm bullet casing."
+	caliber = "a7.62x39"
 	projectile_type = /obj/item/projectile/bullet/heavybullet
 
 /obj/item/ammo_casing/caseless
