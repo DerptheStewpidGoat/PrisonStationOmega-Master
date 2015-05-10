@@ -34,22 +34,22 @@
 	faction = list("syndicate")
 	status_flags = CANPUSH
 	isNesting = TRUE
-	nestedProc = "layMine"
+//	nestedProc = "layMine"
 
-/mob/living/simple_animal/hostile/syndicate/verb/layMine()
-	set name = "Lay Mine"
-	set category = "Syndicate"
-	set desc = "Lays down a mine to impede enemy progress."
+//mob/living/simple_animal/hostile/syndicate/verb/layMine()
+//	set name = "Lay Mine"
+//	set category = "Syndicate"
+//	set desc = "Lays down a mine to impede enemy progress."
 
-	var/T = src.loc
-	var/inRange = locate(/obj/effect/mine) in oview(src,2)
+//	var/T = src.loc
+//	var/inRange = locate(/obj/effect/mine) in oview(src,2)
 
-	if(!inRange)
-		src.visible_message("<span class='notice'>\the [src] throws down a mine.</span>")
-		stop_automated_movement = 1
-		var/mineType = pick(/obj/effect/mine/n2o,/obj/effect/mine/stun,/obj/effect/mine/plasma)
-		new mineType(T)
-		stop_automated_movement = 0
+//	if(!inRange)
+//		src.visible_message("<span class='notice'>\the [src] throws down a mine.</span>")
+//		stop_automated_movement = 1
+//		var/mineType = pick(/obj/effect/mine/n2o,/obj/effect/mine/stun,/obj/effect/mine/plasma)
+//		new mineType(T)
+//		stop_automated_movement = 0
 
 /mob/living/simple_animal/hostile/syndicate/Die()
 	..()
